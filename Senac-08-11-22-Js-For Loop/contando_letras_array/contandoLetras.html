@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando Letras</title>
+    <script defer src="./contandoLetras.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightgray ;">
+    <center>
+        <!--Contando Palavras-->
+        <h2>Contando Palavras</h2>
+        <p>Escreva abaixo para contar quantas palavras você digitou</p>
+        <textarea id="palavras" rows="10" cols="60" oninput="contandoPalavras()"> </textarea>
+        <br /><br />
+
+        <p>
+            Quantidade de palavras:
+            <span id="resultado">0</span>
+        </p>
+
+        <br>
+        <!--Contando letras-->
+        <h2>Contando Caracteres</h2>
+        <p>Digite a palavra abaixo para saber a quantidade de caracteres</p>
+        <input type="text" name="letras" id="letras" placeholder="Digite aqui!"> <!--Adicionar -> onkeyup="contarLetras()" <- no input para contar automaticamente  -->
+        <button type="button" class="btn btn-outline-dark btn-sm" onclick="contarLetras()">Contar</button>
+        <div id="resultadoLetras">?</div>
+
+</body>
+
+</html>
